@@ -27,7 +27,7 @@ async function run(){
             const query = {};
             const cursor = productCollection.find(query);
             const allProducts = await cursor.toArray();
-            console.log(allProducts);
+            // res.status(200).json({allProducts})
             res.send(allProducts);
         });
 
